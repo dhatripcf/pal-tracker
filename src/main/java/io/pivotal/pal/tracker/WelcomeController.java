@@ -11,9 +11,12 @@ public class WelcomeController {
 
     public WelcomeController( @Value("${welcome.message}") String message){
       this.message=message;
+
     }
     @GetMapping("/")
     public String sayHello() {
         return message;
     }
+
+
 }
